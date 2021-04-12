@@ -1,0 +1,266 @@
+{toc:printable=true|style=circle|maxLevel=4|minLevel=1|type=list|outline=true|include=.*}
+
+h1. Executive Summary
+
+{note}
+Candidate to be included only in the Sales Proposal as could be considered a commitment due to be included in the Solution Design
+{note}
+
+----
+
+h1. Preface
+
+h2. Terms and abbreviations
+
+{expand:Glossary}
+|| Term || Definition ||
+| API 	| Application Programming Interface, a set of functions and procedures that allow the creation of applications which access the features or data of an operating system, application, or other service. |
+| CloudBlue (_CB_) | CloudBlue Commerce Engine |
+| RDE 	| Rated Data Export, a component that allows resellers to generate reports with rated transactions |
+{expand}
+
+h2. Revision History
+
+The revision history shows the record of changes made to a project, including bug fixes, new features, etc.
+
+|| Version	  || Date 		     || Description || Author ||
+|  No version |  Tue 16 Jul 2019 |  Nonedesc	|  None   |
+
+h2. Changelog
+
+The changelog identifies the updates made to this document:
+
+|| Version	  || Date 		     || Description 					|| Author 				 ||
+|  v0.1		  |  14 Oct 2018	 |  Initial version of SDD template	|  Juan Victor Izquierdo |
+
+h2. Authors
+
+Here below are listed the authors of this document and their roles:
+
+|| Name || Company || Company Role || Role ||
+|  name |  company |  company role |  role |
+
+----
+
+h1. Introduction
+
+h2. Goal
+
+h2. Scope of the Document
+
+h2. Not in the Scope of the Document
+
+h2. Audience and Roles
+
+The target audience is the following:
+
+|| Stakeholder  || Company || Role ||
+|  Name & Title | | |
+
+h2. Products and Versions
+Platforms and Modules included in the scope and versions:
+
+|| Platform/Module || Version ||
+|  |  |
+
+----
+
+h1. Solution overview
+
+h2. Introduction and Purpose
+
+----
+
+h1. Delivery Project Overview
+
+{note}
+Candidate to be included only in the Sales Proposal as could be considered a commitment due to be included in the Solution Design
+{note}
+
+Note that this timeline is subject to change after formal project review together with the project manager and on the assumption that a customer is able to meet its pre-requisites by the kick-off meeting:
+
+h2. Deliverables
+
+h2. Project staffing requirements
+
+----
+
+h1. Reference Documents
+
+External documentation for scope or context reference:
+
+|| Title || Description || URL ||
+|  |  |  |
+
+----
+
+h1. Assumptions
+
+----
+
+h1. Solution scenarios
+
+h2. User role definition
+
+The following table lists the roles that take part in the project at some point.
+
+|| User role || Description ||
+|  |  |
+
+h2. User stories
+h3. US00 :: Title template
+
+|| Name			 |  |
+|| Persona		 |  |
+|| Summary		 |  |
+|| As a, I can	 |  |
+|| Flow			 |  |
+|| Comments		 |  |
+
+h3. US00 :: ISV-specific self-service management
+This US was recommended to be included in all SDDs as it is a generic requirement.
+
+|| Name | ISV-specific self-service management|
+|| Persona | Account user|
+|| Summary | Perform an action specific to ISV service (for example, view license key or log in to service native portal, etc)|
+|| As a, I can	 | Perform ISV-related action as exposed by the corresponding service |
+|| Flow			 | * Log in to CloudBlue control panel
+* Open corresponding ISV tab
+* Perform the required operation |
+|| Comments		 | The screen content is defined solely by the service connector (for example, when creating corresponding product in Connect portal). CloudBlue platform does not allow to customize it. Actions that are available to the end-customer's user also depend on the connector; examples of such actions that might be exposed by connectors:
+* View license key
+* View service usage instructions ('Get started' info)
+* Download documentation
+* Download software package (including separate links for different OS/mobile devices)
+* View resource usage or reservation quantity (depending on the service billing model)
+* View/download resource usage reports
+* Log in to service native portal with or without SSO |
+
+----
+
+h1. Integration scenarios
+
+h2. Actor definition
+
+|| Actor 				  || Description ||
+| Salesforce(_SF_)		  |  Customer owned and operated instance of Salesforce CRM |
+
+h2. Use cases
+
+h3. UC01 :: Title
+
+|| Name ||  |
+|| Actor ||  |
+|| Summary ||  |
+|| Preconditions ||  |
+|| Main Flow ||  |
+|| Alternative Flow ||  |
+|| Error Flow ||  |
+|| Post Conditions ||  |
+|| Comments || Other requirements & Mockups |
+
+----
+
+h1. Engineering Annex
+
+h2. Entities
+
+This chapter explains the main entities of OAP and how they match with the customer ones:
+
+|| Entity || Description ||
+|  |  |
+
+h2. Components
+
+This diagram shows the different components that take part in this project:
+
+h2. Diagrams
+
+This section expands the use-case information, providing additional flow details:
+
+|| Use Case ||  |
+|| Diagram  ||  |
+
+h2. Specific error handling
+
+h2. External API integration
+
+h3. Documentation
+
+The following table lists all the documents available for API reference
+
+|| Title || Description || Version || URL ||
+|  |  |  |
+
+h3. Integration Details
+
+The following table details the different integration environments and access information:
+
+|| Title || Environment || Endpoint || Credentials ||
+|  |  |  |
+
+
+h3. API Execution
+
+The following table is a collection of some API examples of the integration to be developed:
+
+|| Use Case || Request || Response ||
+|  |  |
+
+h2. Non-functional requirements
+
+----
+
+h1. Delivery Annex
+
+h2. Platform definition
+
+h3. Pre-Work
+
+Links to pre-work documents for the Delivery team:
+
+|| Name || URL ||
+|  |  |
+
+h2. Services
+
+The following table lists all the services that will be sold:
+
+|| Product || Service || SKU ||
+|  |  |
+
+h3. Pre-Work
+
+Link to pre-work documents for the Delivery team:
+
+|| Name || URL ||
+|  |  |
+
+h2. Payment Methods
+
+The following table lists all payment methods:
+
+|| Payment Method || Description ||
+|  |  |
+
+h2. Roles
+
+This chapter lists all the roles to be configured in the platform:
+
+|| Name  || Description	|| Roles ||
+|  Admin |  Customer administrator. He can do all the available actions on the platform as it is a "high level" user. | Full access |
+
+h2. Accounts / Resellers Hierarchy
+
+This chapter shows the hierarchy of the accounts in multiple reseller environments.
+
+h2. Custom Attributes
+
+The custom attributes are needed to store additional information of the entity as they are not included OOB and they are needed for the project:
+
+|| Name || Applied to || Type || Mandatory || Description ||
+
+h2. Branding
+
+h2. Online Store
+

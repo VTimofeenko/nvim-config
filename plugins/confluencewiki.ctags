@@ -1,0 +1,51 @@
+--langdef=confluencewiki
+--map-confluencewiki=+.confluencewiki
+--_scopesep-confluencewiki=*/*:»
+
+--kinddef-confluencewiki=o,h1,level one header
+--kinddef-confluencewiki=t,h2,level two header
+--kinddef-confluencewiki=T,h3,level three header
+--kinddef-confluencewiki=f,h4,level four header
+--kinddef-confluencewiki=i,h5,level five header
+--kinddef-confluencewiki=s,h6,level six header
+
+--_tabledef-confluencewiki=main
+--_tabledef-confluencewiki=skip
+--_tabledef-confluencewiki=h1
+--_tabledef-confluencewiki=h2
+--_tabledef-confluencewiki=h3
+--_tabledef-confluencewiki=h4
+--_tabledef-confluencewiki=h5
+--_tabledef-confluencewiki=h6
+
+
+--_mtable-regex-confluencewiki=skip/^[^h\n][^\n]+[\n]//
+--_mtable-regex-confluencewiki=skip/[\n]+//
+
+--_mtable-extend-confluencewiki=main+skip
+--_mtable-regex-confluencewiki=main/^h1\.[ \t]*([^\n]+)/\1/o/{scope=push}{tenter=h1}
+
+--_mtable-extend-confluencewiki=h1+skip
+--_mtable-regex-confluencewiki=h1/^h2\.[ \t]*([^\n]+)/\1/t/{scope=push}{tenter=h2}
+--_mtable-regex-confluencewiki=h1/^h1\.[ \t]*([^\n]+)//{scope=pop}{tleave}{_advanceTo=0start}
+
+--_mtable-extend-confluencewiki=h2+skip
+--_mtable-regex-confluencewiki=h2/^h3\.[ \t]*([^\n]+)/\1/T/{scope=push}{tenter=h3}
+--_mtable-regex-confluencewiki=h2/^h[12]\.[ \t]*([^\n]+)//{scope=pop}{tleave}{_advanceTo=0start}
+
+--_mtable-extend-confluencewiki=h3+skip
+--_mtable-regex-confluencewiki=h3/^h4\.[ \t]*([^\n]+)/\1/f/{scope=push}{tenter=h4}
+--_mtable-regex-confluencewiki=h3/^h[123]\.[ \t]*([^\n]+)//{scope=pop}{tleave}{_advanceTo=0start}
+
+--_mtable-extend-confluencewiki=h4+skip
+--_mtable-regex-confluencewiki=h4/^h5\.[ \t]*([^\n]+)/\1/i/{scope=push}{tenter=h5}
+--_mtable-regex-confluencewiki=h4/^h[1234]\.[ \t]*([^\n]+)//{scope=pop}{tleave}{_advanceTo=0start}
+
+--_mtable-extend-confluencewiki=h5+skip
+--_mtable-regex-confluencewiki=h5/^h6\.[ \t]*([^\n]+)/\1/s/{scope=push}{tenter=h6}
+--_mtable-regex-confluencewiki=h5/^h[12345]\.[ \t]*([^\n]+)//{scope=pop}{tleave}{_advanceTo=0start}
+
+--_mtable-extend-confluencewiki=h6+skip
+--_mtable-regex-confluencewiki=h6/^h[123456]\.[ \t]*([^\n]+)//{scope=pop}{tleave}{_advanceTo=0start}
+
+
