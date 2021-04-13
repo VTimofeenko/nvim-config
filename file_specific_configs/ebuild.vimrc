@@ -10,6 +10,9 @@ augroup ebuild_vimrc
 				\| let g:syntastic_auto_loc_list = 1
 				\| let g:syntastic_check_on_open = 1
 				\| let g:syntastic_check_on_wq = 0
+				"\ repoman shortcuts
+				\| nmap <leader>rm :silent !nohup repoman manifest<CR>
+				\| nmap <leader>rf :split term://repoman manifest && repoman full -xd<CR>
 	" technically not ebuild, but belongs here
 	autocmd BufRead,BufNewFile metadata.xml
 				\  set filetype=xml
