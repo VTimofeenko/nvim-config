@@ -11,5 +11,7 @@ augroup ebuild_vimrc
 				\| let g:syntastic_check_on_open = 1
 				\| let g:syntastic_check_on_wq = 0
 	" technically not ebuild, but belongs here
-	autocmd BufRead,BufNewFile metadata.xml set filetype=xml
+	autocmd BufRead,BufNewFile metadata.xml
+				\  set filetype=xml
+				\| let g:syntastic_xml_xmllint_args = "--nonet --noout --dtdvalid /var/db/repos/gentoo/metadata/dtd/metadata.dtd"
 augroup END
