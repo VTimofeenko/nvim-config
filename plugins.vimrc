@@ -22,6 +22,7 @@ Plug 'wellle/tmux-complete.vim' " completes from tmux panes
 " autocomplete end
 " file-specific plugins
 Plug 'cespare/vim-toml', { 'for': ['toml'] } " syntax for toml files
+Plug 'vim-syntastic/syntastic', { 'for': ['sh', 'ebuild', 'xml'] }
 Plug 'mboughaba/i3config.vim', { 'for': ['i3config'] } " i3 file syntax
 Plug 'jszakmeister/markdown2ctags', { 'for': ['markdown'] } " for markdown tagbar
 Plug 'VTimofeenko/confluencewiki-img-paste.vim', { 'for': ['confluencewiki', 'markdown'] } " confluencewiki image paste
