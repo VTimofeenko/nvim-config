@@ -73,3 +73,7 @@ augroup AutoSaveFolds
 	autocmd BufWinLeave,BufLeave,BufWritePost ?* nested silent! mkview!
 	autocmd BufWinEnter ?* silent! loadview
 augroup END
+
+" terminal
+" switch from term back
+tnoremap <leader>t <C-\><C-n>
