@@ -11,12 +11,10 @@ augroup md_vimrc
 				\  colorscheme pencil
 				\| hi Normal ctermbg=None
 				\| AirlineTheme afterglow
-	let g:airline#extensions#tabline#show_close_button = 0
-	let g:airline#extensions#tagbar#enabled = 1
 	" whitespace removal
-	" autocmd FileType markdown
-	" 			\  let b:leave_my_trailing_space_alone=0
-	" 			\| let g:airline#extensions#whitespace#enabled = 0
+	autocmd FileType markdown
+				\  let b:leave_my_trailing_space_alone=0
+				\| let g:airline#extensions#whitespace#enabled = 0
 
 	" images clipboard paste
 	autocmd FileType markdown
