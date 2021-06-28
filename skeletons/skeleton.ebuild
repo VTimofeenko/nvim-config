@@ -12,7 +12,10 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
+# packages that need to be found on built system, e.g. libraries and headers.
 DEPEND=""
+# Dependencies required runtime
 RDEPEND="${DEPEND}"
+# Dependencies needed during build
 BDEPEND=""
 
