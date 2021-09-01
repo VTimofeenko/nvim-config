@@ -9,7 +9,7 @@ augroup yaml
 				\| set foldmethod=indent
 				\| set cursorline cursorcolumn
 	" add mapping for jinja2 plugins
-	autocmd FileType yaml inoremap {{ {{<Space><Space>}}<Esc>hhha
+	autocmd FileType yaml call EnableJinjaShortcuts()
 
 	" toggle crosshairs mode
 	autocmd FileType yaml nmap <leader>c :set cursorline! cursorcolumn!

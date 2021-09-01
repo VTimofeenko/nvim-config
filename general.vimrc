@@ -77,3 +77,9 @@ augroup END
 " terminal
 " switch from term back
 tnoremap <leader>t <C-\><C-n>
+
+" enable jinja template hotkey for arbitrary file
+fun! EnableJinjaShortcuts()
+	inoremap {{ {{<Space><Space>}}<Esc>hhha
+endfun
+nnoremap <leader>j :call EnableJinjaShortcuts()<cr>
