@@ -26,7 +26,7 @@ Plug 'vim-syntastic/syntastic', { 'for': ['sh', 'ebuild', 'xml'] }
 Plug 'mboughaba/i3config.vim', { 'for': ['i3config'] } " i3 file syntax
 Plug 'jszakmeister/markdown2ctags', { 'for': ['markdown'] } " for markdown tagbar
 Plug 'VTimofeenko/confluencewiki-img-paste.vim', { 'for': ['confluencewiki', 'markdown'] } " confluencewiki image paste
-
+Plug 'psf/black', { 'branch': 'stable', 'for': ['python'] }
 Plug 'gentoo/gentoo-syntax', { 'for': ['ebuild', 'gentoo-init-d'] } " ebuilds
 Plug 'VTimofeenko/ncm2-ebuild', { 'for': ['ebuild'] } " ncm2 completion for ebuild
 Plug 'VTimofeenko/vim-todofile', { 'for': ['todofile'] }

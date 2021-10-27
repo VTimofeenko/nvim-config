@@ -10,4 +10,5 @@ augroup python_vimrc
 				\| set foldmethod=indent
 				\| colorscheme PaperColor
 				\| setlocal indentkeys-=:
+	autocmd BufWritePre *.py execute ':Black'
 augroup END

@@ -96,3 +96,6 @@ let g:bullets_enabled_file_types = [
     \ 'gitcommit',
     \ 'scratch'
     \]
+
+" black
+let g:black_linelength = 119
