@@ -26,6 +26,12 @@ augroup md_vimrc
 	autocmd FileType markdown
 				\  vmap ] S]%
 				\| vmap ]\ ]a(|
+	" <leader>b - make visual selection bold. Relies on vim-surround
+	" Surrounds with single asterisk first, then selects last visual selection and surrounds again.
+	" Hacky but works with my workflow
+	autocmd FileType markdown
+				\  vmap <leader>b S*<CR>gvS*<CR>
+
 
 augroup END
 " TagBar
